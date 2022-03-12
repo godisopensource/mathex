@@ -1,0 +1,45 @@
+% Document properties
+\documentclass{article}
+\usepackage[margin=20mm]{geometry}
+
+% Set french characters
+\usepackage[utf8]{inputenc}
+\usepackage{tasks}
+\usepackage{fontspec}
+\usepackage[mathscr]{eucal}
+\usepackage{fixltx2e}
+
+% Set content
+\usepackage{enumitem}
+\usepackage{systeme}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tabto}
+\usepackage{soul}
+\newcommand\coord[3]{\begin{pmatrix} % coordonates (x ; y ; z) for vectors
+ #1 \\
+ #2 \\
+ #3 
+ \end{pmatrix}}
+ \newcommand{\mv}[1]{\overrightarrow{#1}}
+ 
+	% Set fonts
+		\newfontfamily{\bigtitle}{Inter Black Italic}
+		\newfontfamily{\subtitle}{Inter Bold Italic}
+		\newfontfamily{\sec}{Inter Bold}
+		\newfontfamily{\cursive}{Mathematical Pi LT Std}
+		\renewcommand*{\thesection}{}
+		\newcommand{\plan}[1]{\mathscr{P}_#1}
+		% \newcommand{\*}{\times}
+		
+% ============== Document starts here ============== %
+\begin{document}
+	\author{\subtitle Author}
+	\title{\Huge \bigtitle Titre du document \vspace{-0,4em}}
+	\date{}
+	\maketitle
+
+% First section
+\section{\sec Section}
+
+\end{document}
